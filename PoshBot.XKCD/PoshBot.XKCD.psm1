@@ -2,7 +2,7 @@
 function xkcd {
 <#
     .SYNOPSIS
-        Search Giphy
+        Retrieve a XKCD comic
     .EXAMPLE
         !xkcd ( [1234 | --number 1234] | [--random] | [--newest 5] )
     #>
