@@ -98,10 +98,10 @@ PrivateData = @{
         Tags = @('XKCD', 'PoshBot', 'ChatOps', 'Comic')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://raw.githubusercontent.com/poshbotio/PoshBot.XKCD/master/LICENSE'
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/poshbotio/PoshBot.XKCD'
 
         # A URL to an icon representing this module.
         # IconUri = ''
