@@ -1,11 +1,12 @@
 
-function xkcd {
-<#
+function Get-XKCD {
+    <#
     .SYNOPSIS
         Retrieve a XKCD comic
     .EXAMPLE
         !xkcd ( [1234 | --number 1234] | [--random] | [--newest 5] )
     #>
+    [PoshBot.BotCommand(CommandName = 'xkcd')]
     [cmdletbinding(DefaultParameterSetName = 'item')]
     param(
         [parameter(ParameterSetName = 'item')]
@@ -41,4 +42,4 @@ function xkcd {
     }
 }
 
-Export-ModuleMember -Function xkcd
+Export-ModuleMember -Function 'Get-XKCD'
