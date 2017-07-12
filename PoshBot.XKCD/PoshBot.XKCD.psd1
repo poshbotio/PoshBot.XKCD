@@ -12,7 +12,7 @@
 RootModule = 'PoshBot.XKCD.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.1'
+ModuleVersion = '1.0.2'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -51,7 +51,7 @@ PowerShellVersion = '5.0.0'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-# RequiredModules = @()
+RequiredModules = @('PoshBot')
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -107,7 +107,20 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        # ReleaseNotes = ''
+        ReleaseNotes = '
+## [1.0.2] - 2017-07-12
+### Fixed
+- Add PoshBot dependency to module manifest.
+
+## [1.0.1] - 2017-03-24
+### Changed
+- Explicitly export function in module manifest
+- Renamed function to conform to PowerShell conventions (verb-noun) and set bot command name to "xkcd" via [PoshBot.BotCommand()] attribute.
+
+## [1.0.0] - 2017-03-21
+### Added
+- Initial commit
+'
 
     } # End of PSData hashtable
 
