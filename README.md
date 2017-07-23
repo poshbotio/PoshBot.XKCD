@@ -26,13 +26,31 @@ https://imgs.xkcd.com/comics/vomiting_emoji.png
 ```
 
 ```
+!xkcd --AltText
+https://imgs.xkcd.com/comics/vomiting_emoji.png
+My favorite might be U+1F609 U+1F93F WINKING FACE VOMITING.
+```
+
+```
 !xkcd --random
 https://imgs.xkcd.com/comics/1337_part_4.png
 ```
 
 ```
+!xkcd --random --alt
+https://imgs.xkcd.com/comics/extrapolating.png
+By the third trimester, there will be hundreds of babies inside you.
+```
+
+```
 !xkcd --number 1234
 https://imgs.xkcd.com/comics/douglas_engelbart_1925_2013.png
+```
+
+```
+!xkcd --number 1234 -alt
+https://imgs.xkcd.com/comics/douglas_engelbart_1925_2013.png
+Actual quote from The Demo: '... an advantage of being online is that it keeps track of who you are and what youâre doing all the time ...'
 ```
 
 ```
@@ -42,4 +60,14 @@ https://imgs.xkcd.com/comics/onboarding.png
 https://imgs.xkcd.com/comics/best_tasting_colors.png
 https://imgs.xkcd.com/comics/chat_systems.png
 https://imgs.xkcd.com/comics/xkcd_phone_5.png
+```
+
+```
+!xkcd --newest 3 -alt
+https://imgs.xkcd.com/comics/vomiting_emoji.png
+My favorite might be U+1F609 U+1F93F WINKING FACE VOMITING.
+https://imgs.xkcd.com/comics/onboarding.png
+'So we just have a steady flow of metal piling up in our server room? Isn't that a problem?' 'Yeah, you should bring that up at our next bismuth meeting.'
+https://imgs.xkcd.com/comics/best_tasting_colors.png
+I recognize that chocolate is its own thing on which reasonable people may differ. Everything else here is objective fact.
 ```

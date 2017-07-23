@@ -4,19 +4,23 @@ function Get-XKCD {
     .SYNOPSIS
         Retrieve a XKCD comic
     .EXAMPLE
-        !xkcd ( [1234 | --number 1234] | [--random] | [--newest 5] )
+        !xkcd ( [1234 | --number 1234] | [--random] | [--alt] | [--newest 5] )
     #>
     [PoshBot.BotCommand(CommandName = 'xkcd')]
     [cmdletbinding(DefaultParameterSetName = 'item')]
     param(
-        [parameter(ParameterSetName = 'item')]
+        [parameter(ParameterSetName = 'item', Position = 0)]
         [int]$Number = (Invoke-RestMethod 'http://xkcd.com/info.0.json').num,
 
         [parameter(ParameterSetName = 'newest')]
         [int]$Newest,
 
         [parameter(ParameterSetName = 'random')]
-        [switch]$Random
+        [switch]$Random,
+
+        [parameter(Mandatory = $false)]
+		[Alias("alt")]
+        [switch]$AltText
     )
 
     begin {
@@ -37,6 +41,9 @@ function Get-XKCD {
             $comic = Invoke-RestMethod "http://xkcd.com/$_/info.0.json" -ErrorAction SilentlyContinue
             if ($comic) {
                 $comic.img
+				if($AltText){
+					'>' + $comic.alt
+				}
             }
         }
     }
