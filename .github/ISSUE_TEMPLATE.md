@@ -1,24 +1,28 @@
 <!--- Provide a general summary of the issue in the Title above -->
 
 ## Current Behavior
+/homerSimpsonVoice On
+No alt text.
 <!--- If describing a bug, tell us what happens instead of the expected behavior -->
 <!--- If suggesting a change/improvement, explain the difference from current behavior -->
 
 ## Expected Behavior
+Should be alt text.
 <!--- If you're describing a bug, tell us what should happen -->
 <!--- If you're suggesting a change/improvement, tell us how it should work -->
 
 ## Possible Solution
+Add --AltText switch.
 <!--- Not obligatory, but suggest a fix/reason for the bug, -->
 <!--- or ideas how to implement the addition or change -->
 
 ## Steps to Reproduce (for bugs)
 <!--- Provide a link to a live example, or an unambiguous set of steps to -->
 <!--- reproduce this bug. Include code to reproduce, if relevant -->
-1.
-2.
-3.
-4.
+1.Run command.
+2.Look for alt-text.
+3.Disappointment.
+4.Alcohol.
 
 ## Context
 <!--- How has this issue affected you? What are you trying to accomplish? -->
@@ -26,5 +30,5 @@
 
 ## Your Environment
 <!--- Include as many relevant details about the environment you experienced the bug in -->
-* Module version used:
-* Operating System and PowerShell version:
+* Module version used:1.0.2
+* Operating System and PowerShell version:Win10
