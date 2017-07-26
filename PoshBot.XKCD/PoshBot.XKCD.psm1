@@ -19,7 +19,7 @@ function Get-XKCD {
         [switch]$Random,
 
         [parameter(Mandatory = $false)]
-		[Alias("alt")]
+        [Alias('Alt')]
         [switch]$AltText
     )
 
@@ -41,9 +41,9 @@ function Get-XKCD {
             $comic = Invoke-RestMethod "http://xkcd.com/$_/info.0.json" -ErrorAction SilentlyContinue
             if ($comic) {
                 $comic.img
-				if($AltText){
-					'>' + $comic.alt
-				}
+                if($AltText){
+                    '>' + $comic.alt
+                }
             }
         }
     }

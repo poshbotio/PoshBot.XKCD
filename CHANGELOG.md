@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.0] - 2017-07-25
+### Added
+- Add -AltText switch parameter.
+  When set, the function will emit Alt Text (formatted as quote via markdown) for each comic image output. (via @alexsalisbury)
+
 ## [1.0.2] - 2017-07-12
 ### Fixed
 - Add PoshBot dependency to module manifest.
