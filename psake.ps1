@@ -16,10 +16,6 @@ task Init {
     "`nSTATUS: Testing with PowerShell $psVersion"
     "Build System Details:"
     Get-Item ENV:BH*
-
-    $modules = 'Pester', 'PSScriptAnalyzer'
-    Install-Module $modules -Repository PSGallery -Confirm:$false
-    Import-Module $modules -Verbose:$false -Force
 } -description 'Initialize build environment'
 
 task Test -Depends Init, Analyze, Pester -description 'Run test suite'
