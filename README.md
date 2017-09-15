@@ -16,7 +16,7 @@ PS C:\> Install-Module -Name PoshBot.XKCD -Repository PSGallery
 To install the plugin from within PoshBot:
 
 ```
-!install-plugin --name poshbot.xkcd
+!install-plugin -name poshbot.xkcd
 ```
 
 ## Usage
@@ -26,35 +26,35 @@ https://imgs.xkcd.com/comics/vomiting_emoji.png
 ```
 
 ```
-!xkcd --AltText
+!xkcd -alttext
 https://imgs.xkcd.com/comics/vomiting_emoji.png
 My favorite might be U+1F609 U+1F93F WINKING FACE VOMITING.
 ```
 
 ```
-!xkcd --random
+!xkcd -random
 https://imgs.xkcd.com/comics/1337_part_4.png
 ```
 
 ```
-!xkcd --random --alt
+!xkcd -random -alt
 https://imgs.xkcd.com/comics/extrapolating.png
 By the third trimester, there will be hundreds of babies inside you.
 ```
 
 ```
-!xkcd --number 1234
+!xkcd -number 1234
 https://imgs.xkcd.com/comics/douglas_engelbart_1925_2013.png
 ```
 
 ```
-!xkcd --number 1234 -alt
+!xkcd -number 1234 -alt
 https://imgs.xkcd.com/comics/douglas_engelbart_1925_2013.png
-Actual quote from The Demo: '... an advantage of being online is that it keeps track of who you are and what youâre doing all the time ...'
+Actual quote from The Demo: '... an advantage of being online is that it keeps track of who you are and what youï¿½re doing all the time ...'
 ```
 
 ```
-!xkcd --newest 5
+!xkcd -newest 5
 https://imgs.xkcd.com/comics/vomiting_emoji.png
 https://imgs.xkcd.com/comics/onboarding.png
 https://imgs.xkcd.com/comics/best_tasting_colors.png
@@ -63,7 +63,7 @@ https://imgs.xkcd.com/comics/xkcd_phone_5.png
 ```
 
 ```
-!xkcd --newest 3 -alt
+!xkcd -newest 3 -alt
 https://imgs.xkcd.com/comics/vomiting_emoji.png
 My favorite might be U+1F609 U+1F93F WINKING FACE VOMITING.
 https://imgs.xkcd.com/comics/onboarding.png
