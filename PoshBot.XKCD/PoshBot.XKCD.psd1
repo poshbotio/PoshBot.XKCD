@@ -12,7 +12,7 @@
 RootModule = 'PoshBot.XKCD.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.1.0'
+ModuleVersion = '1.1.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -108,10 +108,14 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = '
+## 1.1.1 - 2017-09-14
+### Fixed
+- Ensure TLS 1.2 is used with calling XKCD API (via @DunlapOverbelt).
+
 ## [1.1.0] - 2017-07-25
 ### Added
 - Add -AltText switch parameter.
-  When set, the function will emit Alt Text (formatted as quote via markdown) for each comic image output. (via @alexsalisbury)
+    When set, the function will emit Alt Text (formatted as quote via markdown) for each comic image output. (via @alexsalisbury)
 
 ## [1.0.2] - 2017-07-12
 ### Fixed
