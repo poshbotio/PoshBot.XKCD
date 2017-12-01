@@ -1,4 +1,7 @@
 
+[![Build status][appveyor-badge]][appveyor-build]
+[![PowerShell Gallery][psgallery-badge]][psgallery]
+
 # PoshBot.XKCD
 
 A simple [PoshBot](https://github.com/devblackops/PoshBot) plugin to retrieve URLs to XKCD images.
@@ -71,3 +74,8 @@ https://imgs.xkcd.com/comics/onboarding.png
 https://imgs.xkcd.com/comics/best_tasting_colors.png
 I recognize that chocolate is its own thing on which reasonable people may differ. Everything else here is objective fact.
 ```
+
+[appveyor-badge]: https://ci.appveyor.com/api/projects/status/eui6lam92efc5n8k?svg=true
+[appveyor-build]: https://ci.appveyor.com/project/devblackops/poshbot-xkcd
+[psgallery-badge]: https://img.shields.io/powershellgallery/dt/poshbot.xkcd.svg
+[psgallery]: https://www.powershellgallery.com/packages/poshbot.xkcd
