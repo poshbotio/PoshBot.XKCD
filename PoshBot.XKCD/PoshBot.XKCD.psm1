@@ -69,7 +69,12 @@ function Get-XKCD {
         $item | Foreach-Object {
             $comic = Invoke-RestMethod "https://xkcd.com/$_/info.0.json" -ErrorAction SilentlyContinue
             if ($comic) {
-                $comic.img
+                if ($global:PoshbotContext.BackendType -in @('TeamsBackend')) {
+                    "![img]($($comic.img))"
+                }
+                else {
+                    $comic.img
+                }
                 if($AltText){
                     '>' + $comic.alt
                 }
